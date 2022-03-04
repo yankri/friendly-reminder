@@ -1,4 +1,4 @@
-# threatiquette
+# friendly-reminder
 
 ## Project setup
 ```
