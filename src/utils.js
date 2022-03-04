@@ -1,5 +1,9 @@
-var Lunicode = require('lunicode');
-
+const Lunicode = require('lunicode');
+Lunicode.tools.creepify.options.top = false;
+Lunicode.tools.creepify.options.middle = true;
+Lunicode.tools.creepify.options.bottom = true;
+Lunicode.tools.creepify.options.maxHeight = 15;
+Lunicode.tools.creepify.options.randomization = 100;
 const spongebobTransform = function(input) {
     return input.split('').map((character, index) => {
         if (character === '' || index % 2 == 0) return character.toLowerCase();
@@ -22,12 +26,6 @@ const cuteTransform = function(input) {
 }
 
 const abominationTransform = function(input) {
-    Lunicode.tools.creepify.options.top = false;
-    Lunicode.tools.creepify.options.middle = true;
-    Lunicode.tools.creepify.options.bottom = true;
-    Lunicode.tools.creepify.options.maxHeight = 15;
-    Lunicode.tools.creepify.options.randomization = 100;
-
     return Lunicode.tools.creepify.encode(input);
 }
 
@@ -113,7 +111,7 @@ const transformInput = function(input, type) {
     }
 }
 
-export {
+module.exports = {
     spongebobTransform,
     cuteTransform,
     abominationTransform,
