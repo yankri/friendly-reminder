@@ -1,4 +1,4 @@
-const luni = require("lunicode");
+const luni = require('lunicode');
 
 const spongebobTransform = function(input) {
     return input.split('').map((character, index) => {
@@ -40,7 +40,6 @@ const sparkleSpaceTransform = function(input) {
 
     return `${sparkle} ${spacedWords} ${sparkle}`;
 }
-
 
 const convertToCuteLetters = function (letter) {
     switch(letter.toLowerCase() ){
@@ -112,7 +111,6 @@ const transformInput = function(input, type) {
         case 'abomination': 
             return abominationTransform(input);
     }
-
 }
 
 export {
