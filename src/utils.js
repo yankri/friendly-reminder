@@ -1,4 +1,4 @@
-const luni = require('lunicode');
+import lunicode from "./assets/lunicode";
 
 const spongebobTransform = function(input) {
     return input.split('').map((character, index) => {
@@ -22,13 +22,14 @@ const cuteTransform = function(input) {
 }
 
 const abominationTransform = function(input) {
-    luni.tools.creepify.options.top = false;
-    luni.tools.creepify.options.middle = true;
-    luni.tools.creepify.options.bottom = true;
-    luni.tools.creepify.options.maxHeight = 15;
-    luni.tools.creepify.options.randomization = 100;
 
-    return luni.tools.creepify.encode(input);
+    lunicode.tools.creepify.options.top = false;
+    lunicode.tools.creepify.options.middle = true;
+    lunicode.tools.creepify.options.bottom = true;
+    lunicode.tools.creepify.options.maxHeight = 15;
+    lunicode.tools.creepify.options.randomization = 100;
+
+    return lunicode.tools.creepify.encode(input);
 }
 
 const sparkleSpaceTransform = function(input) {
