@@ -22,7 +22,6 @@ const cuteTransform = function(input) {
 }
 
 const abominationTransform = function(input) {
-
     lunicode.tools.creepify.options.top = false;
     lunicode.tools.creepify.options.middle = true;
     lunicode.tools.creepify.options.bottom = true;

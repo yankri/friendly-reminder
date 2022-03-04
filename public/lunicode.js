@@ -1,6 +1,6 @@
 
 /* eslint-disable */
-module.exports = new Lunicode();
+// module.exports = new Lunicode();
 function Lunicode() {
   this.tools = {
   
