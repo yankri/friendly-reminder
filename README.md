@@ -1,5 +1,7 @@
 # friendly-reminder
 
+now we're learning
+
 ## Project setup
 ```
 npm install
